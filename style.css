@@ -137,7 +137,7 @@ border-radius: 62rem;
 
 .navbar_user_buttons_container {
     width: 13rem;
-    background-color: rgb(244, 237, 235);
+    background-color: white;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
