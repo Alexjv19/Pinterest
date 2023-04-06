@@ -29,19 +29,76 @@ main {
 
 nav {
     height: 5rem;
-    background-color: brown;
+    background-color: white;
     display: flex;
 }
 
 .navbar_pinterest_buttons_container {
     width: 16rem;
-    background-color: aquamarine;
+    height: 100%;
+    padding-inline: 0.6rem;
+    padding-block-start: 0rem;
+}
+
+.navbar_pinterest_buttons {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.boton-1{
+background-color: white;
+border: 0;
+min-width: 3.5rem;
+min-height:2.5rem ;
+border-radius: 62rem;
+}
+.boton-1:focus{
+    background-color: black;
+    color: white;
+}
+
+.boton-2{
+    background-color: white;
+    border: 0;
+    min-width: 3.5rem;
+    min-height:2.5rem ;
+    border-radius: 62rem;
+    }
+    .boton-2:focus{
+        background-color: black;
+        color: white;
+    }
+
+    .boton-3{
+        background-color: white;
+        border: 0;
+        min-width: 3.5rem;
+        min-height:2.5rem ;
+        border-radius: 62rem;;
+        }
+        .boton-3:focus{
+            background-color: black;
+            color: white;
+        }
+
+.navbar_pinterest_buttons>svg {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    border-radius: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    background: white;
+    color: rgb(255, 0, 0);
+    border: 0;
 }
 
 .navbar_input_search_container {
     flex-grow: 4;
     min-width: 3rem;
-    background-color: darkolivegreen;
+    background-color: white;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -80,7 +137,89 @@ nav {
 
 .navbar_user_buttons_container {
     width: 13rem;
-    background-color: coral;
+    background-color: rgb(244, 237, 235);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#notificaciones{
+    background-color: white;
+    color:#848181;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+#notificaciones:hover{
+    background-color: #c8c4c4;
+}
+
+#notificaciones:focus{
+    color: black;
+}
+
+
+#mensaje{
+    background-color:white;
+    color:#848181;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+#mensaje:hover{
+    background-color: #c8c4c4;
+}
+
+#mensaje:focus{
+    color: black;
+}
+
+#Perfil_img{
+    background-color:white;
+    color:#848181;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+#Perfil_img:hover{
+    background-color: #c8c4c4;
+    width: 3rem ;
+    height: 3rem ;
+}
+
+#Perfil_img:focus{
+    background-color: #c8c4c4;
+}
+
+#arrow{
+    background-color: white;
+    color:#848181;
+    border: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+#arrow:hover{
+    background-color: #c8c4c4;
+}
+
+#arrow:focus{
+    color: black;
+}
+
+
+.img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--card_border_radius);
 }
 
 .pin_container {
@@ -94,14 +233,103 @@ nav {
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
     justify-content: center;
-    background-color: black;
+    background-color: white;
 }
 
 .card {
     padding: 0;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
+    background-color: white;
+    position: relative;
+}
+
+.contenido_tarjeta{
+    width:100% ;
+    height:100% ;
+    border-radius:var(--card_border_radius);
+    position:absolute ;
+    text-align: center;
+}
+
+.contenido_hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: var(--card_border_radius);
+    justify-content: space-between;
+}
+
+.tarjeta_abajo{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.flecha{
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 50%;
+    background-color: rgba(253, 249, 249, 0.473);
+    border: 0;
+    color: black;
+    margin-inline-end: .5rem;
+}
+
+.flecha:hover{
+    background-color: white;
+}
+
+.dots{
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 50%;
+    background-color: rgba(253, 249, 249, 0.473);
+    border: 0;
+    color: black;
+    margin-inline-end: .5rem;
+}
+
+.dots:hover{
+    background-color: white;
+}
+
+.save_card{
+    min-height: 2.5rem;
+    min-width: 6rem;
+    border-radius: 62rem;
     background-color: red;
+    border: 0;
+    color: white;
+    margin-inline-end: .5rem;
+    font-weight: bold;
+}
+
+.save_card:hover{
+    background-color: rgb(161, 25, 25);
+}
+
+.arriba_tarjeta{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.contenido_hover:hover{
+    opacity: 1;
 }
 
 .card_small {

@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
     <nav>
         <div class="navbar_pinterest_buttons_container">
             <div class="navbar_pinterest_buttons">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
-                </svg>
-            <input type="text" placeholder="XXXXX">
+                <svg id="pint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                    <button class="boton-1">Inicio</button>
+                    <button class="boton-2">Hoy</button>
+                    <button class="boton-3">Crear</button>
             </div>
         </div>
         <div class="navbar_input_search_container">
@@ -28,29 +30,586 @@
                 <input type="text" placeholder="Buscar">
             </div>
         </div>
-        <div class="navbar_user_buttons_container"></div>
+        <div class="navbar_user_buttons_container">
+            <button id="notificaciones"><i class="bi bi-bell-fill" style="font-size: 24px;"></i></button>
+            <button id="mensaje"><i class="bi bi-chat-dots" style="font-size: 24px;"></i></button>
+            <button id="Perfil_img"><img src="/img/z.jpg" style="height: 30px; width: 30px;" alt="perrito"></button>
+            <button id="arrow"><i class="bi bi-caret-down" style="font-size: 24px;"></i></button>
+        </div>
     </nav>
     <main>
         <!-- Contenedor de pines -->
         <div class="pin_container">
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
+
+            <div class="card card_small">
+             <div class="contenido_tarjeta">
+                <img class="img" src="/img/1.jpg" alt="aaaa">
+                <div class="contenido_hover">
+                    <div class="arriba_tarjeta">
+                        <button class="save_card"> Guardar </button>
+                    </div>
+                    <div class="tarjeta_abajo">
+                        <button class="flecha">
+                            <i class="bi bi-arrow-up"></i>
+                         </button>    
+                         <button class="dots">
+                            <i class="bi bi-three-dots"></i>
+                         </button>               
+                    </div>
+                </div>
+             </div>
+            </div>
+
+            <div class="card card_medium">
+                <div class="contenido_tarjeta">
+                   <img class="img" src="/img/2.jpg" alt="aaaa">
+                   <div class="contenido_hover">
+                       <div class="arriba_tarjeta">
+                           <button class="save_card"> Guardar </button>
+                       </div>
+                       <div class="tarjeta_abajo">
+                           <button class="flecha">
+                               <i class="bi bi-arrow-up"></i>
+                            </button>    
+                            <button class="dots">
+                               <i class="bi bi-three-dots"></i>
+                            </button>               
+                       </div>
+                   </div>
+                </div>
+               </div>
+
+               <div class="card card_large">
+                <div class="contenido_tarjeta">
+                   <img class="img" src="/img/3.jpg" alt="aaaa">
+                   <div class="contenido_hover">
+                       <div class="arriba_tarjeta">
+                           <button class="save_card"> Guardar </button>
+                       </div>
+                       <div class="tarjeta_abajo">
+                           <button class="flecha">
+                               <i class="bi bi-arrow-up"></i>
+                            </button>    
+                            <button class="dots">
+                               <i class="bi bi-three-dots"></i>
+                            </button>               
+                       </div>
+                   </div>
+                </div>
+               </div>
+
+               <div class="card card_small">
+                <div class="contenido_tarjeta">
+                   <img class="img" src="/img/4.jpg" alt="aaaa">
+                   <div class="contenido_hover">
+                       <div class="arriba_tarjeta">
+                           <button class="save_card"> Guardar </button>
+                       </div>
+                       <div class="tarjeta_abajo">
+                           <button class="flecha">
+                               <i class="bi bi-arrow-up"></i>
+                            </button>    
+                            <button class="dots">
+                               <i class="bi bi-three-dots"></i>
+                            </button>               
+                       </div>
+                   </div>
+                </div>
+               </div>
+   
+               <div class="card card_medium">
+                   <div class="contenido_tarjeta">
+                      <img class="img" src="/img/5.jpg" alt="aaaa">
+                      <div class="contenido_hover">
+                          <div class="arriba_tarjeta">
+                              <button class="save_card"> Guardar </button>
+                          </div>
+                          <div class="tarjeta_abajo">
+                              <button class="flecha">
+                                  <i class="bi bi-arrow-up"></i>
+                               </button>    
+                               <button class="dots">
+                                  <i class="bi bi-three-dots"></i>
+                               </button>               
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+   
+                  <div class="card card_large">
+                   <div class="contenido_tarjeta">
+                      <img class="img" src="/img/6.png" alt="aaaa">
+                      <div class="contenido_hover">
+                          <div class="arriba_tarjeta">
+                              <button class="save_card"> Guardar </button>
+                          </div>
+                          <div class="tarjeta_abajo">
+                              <button class="flecha">
+                                  <i class="bi bi-arrow-up"></i>
+                               </button>    
+                               <button class="dots">
+                                  <i class="bi bi-three-dots"></i>
+                               </button>               
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="card card_small">
+                    <div class="contenido_tarjeta">
+                       <img class="img" src="/img/7.jpg" alt="aaaa">
+                       <div class="contenido_hover">
+                           <div class="arriba_tarjeta">
+                               <button class="save_card"> Guardar </button>
+                           </div>
+                           <div class="tarjeta_abajo">
+                               <button class="flecha">
+                                   <i class="bi bi-arrow-up"></i>
+                                </button>    
+                                <button class="dots">
+                                   <i class="bi bi-three-dots"></i>
+                                </button>               
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+       
+                   <div class="card card_medium">
+                       <div class="contenido_tarjeta">
+                          <img class="img" src="/img/8.jpg" alt="aaaa">
+                          <div class="contenido_hover">
+                              <div class="arriba_tarjeta">
+                                  <button class="save_card"> Guardar </button>
+                              </div>
+                              <div class="tarjeta_abajo">
+                                  <button class="flecha">
+                                      <i class="bi bi-arrow-up"></i>
+                                   </button>    
+                                   <button class="dots">
+                                      <i class="bi bi-three-dots"></i>
+                                   </button>               
+                              </div>
+                          </div>
+                       </div>
+                      </div>
+       
+                      <div class="card card_large">
+                       <div class="contenido_tarjeta">
+                          <img class="img" src="/img/9.jpg" alt="aaaa">
+                          <div class="contenido_hover">
+                              <div class="arriba_tarjeta">
+                                  <button class="save_card"> Guardar </button>
+                              </div>
+                              <div class="tarjeta_abajo">
+                                  <button class="flecha">
+                                      <i class="bi bi-arrow-up"></i>
+                                   </button>    
+                                   <button class="dots">
+                                      <i class="bi bi-three-dots"></i>
+                                   </button>               
+                              </div>
+                          </div>
+                       </div>
+                      </div>
+
+                      <div class="card card_small">
+                        <div class="contenido_tarjeta">
+                           <img class="img" src="/img/10.jpg" alt="aaaa">
+                           <div class="contenido_hover">
+                               <div class="arriba_tarjeta">
+                                   <button class="save_card"> Guardar </button>
+                               </div>
+                               <div class="tarjeta_abajo">
+                                   <button class="flecha">
+                                       <i class="bi bi-arrow-up"></i>
+                                    </button>    
+                                    <button class="dots">
+                                       <i class="bi bi-three-dots"></i>
+                                    </button>               
+                               </div>
+                           </div>
+                        </div>
+                       </div>
+           
+                       <div class="card card_medium">
+                           <div class="contenido_tarjeta">
+                              <img class="img" src="/img/11.png" alt="aaaa">
+                              <div class="contenido_hover">
+                                  <div class="arriba_tarjeta">
+                                      <button class="save_card"> Guardar </button>
+                                  </div>
+                                  <div class="tarjeta_abajo">
+                                      <button class="flecha">
+                                          <i class="bi bi-arrow-up"></i>
+                                       </button>    
+                                       <button class="dots">
+                                          <i class="bi bi-three-dots"></i>
+                                       </button>               
+                                  </div>
+                              </div>
+                           </div>
+                          </div>
+           
+                          <div class="card card_large">
+                           <div class="contenido_tarjeta">
+                              <img class="img" src="/img/12.jpg" alt="aaaa">
+                              <div class="contenido_hover">
+                                  <div class="arriba_tarjeta">
+                                      <button class="save_card"> Guardar </button>
+                                  </div>
+                                  <div class="tarjeta_abajo">
+                                      <button class="flecha">
+                                          <i class="bi bi-arrow-up"></i>
+                                       </button>    
+                                       <button class="dots">
+                                          <i class="bi bi-three-dots"></i>
+                                       </button>               
+                                  </div>
+                              </div>
+                           </div>
+                          </div>
+
+                          <div class="card card_small">
+                            <div class="contenido_tarjeta">
+                               <img class="img" src="/img/13.jpg" alt="aaaa">
+                               <div class="contenido_hover">
+                                   <div class="arriba_tarjeta">
+                                       <button class="save_card"> Guardar </button>
+                                   </div>
+                                   <div class="tarjeta_abajo">
+                                       <button class="flecha">
+                                           <i class="bi bi-arrow-up"></i>
+                                        </button>    
+                                        <button class="dots">
+                                           <i class="bi bi-three-dots"></i>
+                                        </button>               
+                                   </div>
+                               </div>
+                            </div>
+                           </div>
+               
+                           <div class="card card_medium">
+                               <div class="contenido_tarjeta">
+                                  <img class="img" src="/img/14.png" alt="aaaa">
+                                  <div class="contenido_hover">
+                                      <div class="arriba_tarjeta">
+                                          <button class="save_card"> Guardar </button>
+                                      </div>
+                                      <div class="tarjeta_abajo">
+                                          <button class="flecha">
+                                              <i class="bi bi-arrow-up"></i>
+                                           </button>    
+                                           <button class="dots">
+                                              <i class="bi bi-three-dots"></i>
+                                           </button>               
+                                      </div>
+                                  </div>
+                               </div>
+                              </div>
+               
+                              <div class="card card_large">
+                               <div class="contenido_tarjeta">
+                                  <img class="img" src="/img/15.png" alt="aaaa">
+                                  <div class="contenido_hover">
+                                      <div class="arriba_tarjeta">
+                                          <button class="save_card"> Guardar </button>
+                                      </div>
+                                      <div class="tarjeta_abajo">
+                                          <button class="flecha">
+                                              <i class="bi bi-arrow-up"></i>
+                                           </button>    
+                                           <button class="dots">
+                                              <i class="bi bi-three-dots"></i>
+                                           </button>               
+                                      </div>
+                                  </div>
+                               </div>
+                              </div>
+
+                              <div class="card card_small">
+                                <div class="contenido_tarjeta">
+                                   <img class="img" src="/img/16.jpg" alt="aaaa">
+                                   <div class="contenido_hover">
+                                       <div class="arriba_tarjeta">
+                                           <button class="save_card"> Guardar </button>
+                                       </div>
+                                       <div class="tarjeta_abajo">
+                                           <button class="flecha">
+                                               <i class="bi bi-arrow-up"></i>
+                                            </button>    
+                                            <button class="dots">
+                                               <i class="bi bi-three-dots"></i>
+                                            </button>               
+                                       </div>
+                                   </div>
+                                </div>
+                               </div>
+                   
+                               <div class="card card_medium">
+                                   <div class="contenido_tarjeta">
+                                      <img class="img" src="/img/17.jpg" alt="aaaa">
+                                      <div class="contenido_hover">
+                                          <div class="arriba_tarjeta">
+                                              <button class="save_card"> Guardar </button>
+                                          </div>
+                                          <div class="tarjeta_abajo">
+                                              <button class="flecha">
+                                                  <i class="bi bi-arrow-up"></i>
+                                               </button>    
+                                               <button class="dots">
+                                                  <i class="bi bi-three-dots"></i>
+                                               </button>               
+                                          </div>
+                                      </div>
+                                   </div>
+                                  </div>
+                   
+                                  <div class="card card_large">
+                                   <div class="contenido_tarjeta">
+                                      <img class="img" src="/img/18.jpg" alt="aaaa">
+                                      <div class="contenido_hover">
+                                          <div class="arriba_tarjeta">
+                                              <button class="save_card"> Guardar </button>
+                                          </div>
+                                          <div class="tarjeta_abajo">
+                                              <button class="flecha">
+                                                  <i class="bi bi-arrow-up"></i>
+                                               </button>    
+                                               <button class="dots">
+                                                  <i class="bi bi-three-dots"></i>
+                                               </button>               
+                                          </div>
+                                      </div>
+                                   </div>
+                                  </div>
+
+                                  <div class="card card_small">
+                                    <div class="contenido_tarjeta">
+                                       <img class="img" src="/img/19.jpg" alt="aaaa">
+                                       <div class="contenido_hover">
+                                           <div class="arriba_tarjeta">
+                                               <button class="save_card"> Guardar </button>
+                                           </div>
+                                           <div class="tarjeta_abajo">
+                                               <button class="flecha">
+                                                   <i class="bi bi-arrow-up"></i>
+                                                </button>    
+                                                <button class="dots">
+                                                   <i class="bi bi-three-dots"></i>
+                                                </button>               
+                                           </div>
+                                       </div>
+                                    </div>
+                                   </div>
+                       
+                                   <div class="card card_medium">
+                                       <div class="contenido_tarjeta">
+                                          <img class="img" src="/img/20.jpg" alt="aaaa">
+                                          <div class="contenido_hover">
+                                              <div class="arriba_tarjeta">
+                                                  <button class="save_card"> Guardar </button>
+                                              </div>
+                                              <div class="tarjeta_abajo">
+                                                  <button class="flecha">
+                                                      <i class="bi bi-arrow-up"></i>
+                                                   </button>    
+                                                   <button class="dots">
+                                                      <i class="bi bi-three-dots"></i>
+                                                   </button>               
+                                              </div>
+                                          </div>
+                                       </div>
+                                      </div>
+                       
+                                      <div class="card card_large">
+                                       <div class="contenido_tarjeta">
+                                          <img class="img" src="/img/21.jpg" alt="aaaa">
+                                          <div class="contenido_hover">
+                                              <div class="arriba_tarjeta">
+                                                  <button class="save_card"> Guardar </button>
+                                              </div>
+                                              <div class="tarjeta_abajo">
+                                                  <button class="flecha">
+                                                      <i class="bi bi-arrow-up"></i>
+                                                   </button>    
+                                                   <button class="dots">
+                                                      <i class="bi bi-three-dots"></i>
+                                                   </button>               
+                                              </div>
+                                          </div>
+                                       </div>
+                                      </div>
+
+                                      <div class="card card_small">
+                                        <div class="contenido_tarjeta">
+                                           <img class="img" src="/img/22.jpg" alt="aaaa">
+                                           <div class="contenido_hover">
+                                               <div class="arriba_tarjeta">
+                                                   <button class="save_card"> Guardar </button>
+                                               </div>
+                                               <div class="tarjeta_abajo">
+                                                   <button class="flecha">
+                                                       <i class="bi bi-arrow-up"></i>
+                                                    </button>    
+                                                    <button class="dots">
+                                                       <i class="bi bi-three-dots"></i>
+                                                    </button>               
+                                               </div>
+                                           </div>
+                                        </div>
+                                       </div>
+                           
+                                       <div class="card card_medium">
+                                           <div class="contenido_tarjeta">
+                                              <img class="img" src="/img/23.jpg" alt="aaaa">
+                                              <div class="contenido_hover">
+                                                  <div class="arriba_tarjeta">
+                                                      <button class="save_card"> Guardar </button>
+                                                  </div>
+                                                  <div class="tarjeta_abajo">
+                                                      <button class="flecha">
+                                                          <i class="bi bi-arrow-up"></i>
+                                                       </button>    
+                                                       <button class="dots">
+                                                          <i class="bi bi-three-dots"></i>
+                                                       </button>               
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          </div>
+                           
+                                          <div class="card card_large">
+                                           <div class="contenido_tarjeta">
+                                              <img class="img" src="/img/24.jpg" alt="aaaa">
+                                              <div class="contenido_hover">
+                                                  <div class="arriba_tarjeta">
+                                                      <button class="save_card"> Guardar </button>
+                                                  </div>
+                                                  <div class="tarjeta_abajo">
+                                                      <button class="flecha">
+                                                          <i class="bi bi-arrow-up"></i>
+                                                       </button>    
+                                                       <button class="dots">
+                                                          <i class="bi bi-three-dots"></i>
+                                                       </button>               
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          </div>
+
+                                          <div class="card card_small">
+                                            <div class="contenido_tarjeta">
+                                               <img class="img" src="/img/25.jpg" alt="aaaa">
+                                               <div class="contenido_hover">
+                                                   <div class="arriba_tarjeta">
+                                                       <button class="save_card"> Guardar </button>
+                                                   </div>
+                                                   <div class="tarjeta_abajo">
+                                                       <button class="flecha">
+                                                           <i class="bi bi-arrow-up"></i>
+                                                        </button>    
+                                                        <button class="dots">
+                                                           <i class="bi bi-three-dots"></i>
+                                                        </button>               
+                                                   </div>
+                                               </div>
+                                            </div>
+                                           </div>
+                               
+                                           <div class="card card_medium">
+                                               <div class="contenido_tarjeta">
+                                                  <img class="img" src="/img/26.jpg" alt="aaaa">
+                                                  <div class="contenido_hover">
+                                                      <div class="arriba_tarjeta">
+                                                          <button class="save_card"> Guardar </button>
+                                                      </div>
+                                                      <div class="tarjeta_abajo">
+                                                          <button class="flecha">
+                                                              <i class="bi bi-arrow-up"></i>
+                                                           </button>    
+                                                           <button class="dots">
+                                                              <i class="bi bi-three-dots"></i>
+                                                           </button>               
+                                                      </div>
+                                                  </div>
+                                               </div>
+                                              </div>
+                               
+                                              <div class="card card_large">
+                                               <div class="contenido_tarjeta">
+                                                  <img class="img" src="/img/27.jpg" alt="aaaa">
+                                                  <div class="contenido_hover">
+                                                      <div class="arriba_tarjeta">
+                                                          <button class="save_card"> Guardar </button>
+                                                      </div>
+                                                      <div class="tarjeta_abajo">
+                                                          <button class="flecha">
+                                                              <i class="bi bi-arrow-up"></i>
+                                                           </button>    
+                                                           <button class="dots">
+                                                              <i class="bi bi-three-dots"></i>
+                                                           </button>               
+                                                      </div>
+                                                  </div>
+                                               </div>
+                                              </div>
+
+                                              <div class="card card_small">
+                                                <div class="contenido_tarjeta">
+                                                   <img class="img" src="/img/28.jpg" alt="aaaa">
+                                                   <div class="contenido_hover">
+                                                       <div class="arriba_tarjeta">
+                                                           <button class="save_card"> Guardar </button>
+                                                       </div>
+                                                       <div class="tarjeta_abajo">
+                                                           <button class="flecha">
+                                                               <i class="bi bi-arrow-up"></i>
+                                                            </button>    
+                                                            <button class="dots">
+                                                               <i class="bi bi-three-dots"></i>
+                                                            </button>               
+                                                       </div>
+                                                   </div>
+                                                </div>
+                                               </div>
+                                   
+                                               <div class="card card_medium">
+                                                   <div class="contenido_tarjeta">
+                                                      <img class="img" src="/img/29.png" alt="aaaa">
+                                                      <div class="contenido_hover">
+                                                          <div class="arriba_tarjeta">
+                                                              <button class="save_card"> Guardar </button>
+                                                          </div>
+                                                          <div class="tarjeta_abajo">
+                                                              <button class="flecha">
+                                                                  <i class="bi bi-arrow-up"></i>
+                                                               </button>    
+                                                               <button class="dots">
+                                                                  <i class="bi bi-three-dots"></i>
+                                                               </button>               
+                                                          </div>
+                                                      </div>
+                                                   </div>
+                                                  </div>
+                                   
+                                                  <div class="card card_large">
+                                                   <div class="contenido_tarjeta">
+                                                      <img class="img" src="/img/30.jpg" alt="aaaa">
+                                                      <div class="contenido_hover">
+                                                          <div class="arriba_tarjeta">
+                                                              <button class="save_card"> Guardar </button>
+                                                          </div>
+                                                          <div class="tarjeta_abajo">
+                                                              <button class="flecha">
+                                                                  <i class="bi bi-arrow-up"></i>
+                                                               </button>    
+                                                               <button class="dots">
+                                                                  <i class="bi bi-three-dots"></i>
+                                                               </button>               
+                                                          </div>
+                                                      </div>
+                                                   </div>
+                                                  </div>
         </div>
         <!-- Fin de contenedor de pines -->
         <!-- Botón flotante -->
